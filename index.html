@@ -1,396 +1,441 @@
 <!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>横須賀 ピアノ教室｜4歳から通える 鈴木直子ピアノ教室（無料体験あり）</title>
-  <meta name="description" content="横須賀の鈴木直子ピアノ教室｜4歳から通える個人ピアノレッスン。初心者歓迎・親子同伴OK。無料体験レッスン受付中。津久井幼稚園会場（月・水）／馬堀海岸駅最寄り。" />
-  <meta name="keywords" content="横須賀 ピアノ教室, 横須賀 ピアノレッスン, 幼児 ピアノ 横須賀, 子ども ピアノ教室 横須賀, 馬堀海岸 ピアノ教室" />
+<title>横須賀 ピアノ教室｜鈴木直子ピアノ教室（無料体験）</title>
+<meta name="description" content="横須賀の鈴木直子ピアノ教室。4歳から通える個人ピアノレッスン。初心者歓迎・親子同伴OK。無料体験レッスン受付中。津久井幼稚園（月・水）／馬堀海岸駅最寄り。">
+<link rel="canonical" href="https://crazy-nuts.github.io/suzuki-piano/">
 
-  <link rel="canonical" href="https://crazy-nuts.github.io/suzuki-piano/" />
+<meta property="og:title" content="横須賀 ピアノ教室｜鈴木直子ピアノ教室（無料体験）">
+<meta property="og:description" content="4歳から通える個人レッスン。初心者歓迎・親子同伴OK。無料体験受付中。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://crazy-nuts.github.io/suzuki-piano/">
+<meta property="og:image" content="https://crazy-nuts.github.io/suzuki-piano/assets/image_main.png">
 
-  <!-- OGP -->
-  <meta property="og:title" content="横須賀 ピアノ教室｜鈴木直子ピアノ教室（無料体験あり）" />
-  <meta property="og:description" content="4歳から通える個人レッスン。初心者歓迎・親子同伴OK。無料体験受付中。" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://crazy-nuts.github.io/suzuki-piano/" />
-  <meta property="og:image" content="https://crazy-nuts.github.io/suzuki-piano/assets/image_main.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="横須賀 ピアノ教室｜鈴木直子ピアノ教室" />
-  <meta name="twitter:description" content="4歳から通える個人ピアノレッスン。無料体験受付中。" />
-  <meta name="twitter:image" content="https://crazy-nuts.github.io/suzuki-piano/assets/image_main.png" />
+<style>
+:root{
+  --bg:#fffafc;
+  --text:#2b2430;
+  --muted:#6b5a74;
+  --border: rgba(122, 84, 150, .14);
+  --shadow: 0 10px 30px rgba(30, 10, 60, .08);
+  --shadow2: 0 8px 20px rgba(30, 10, 60, .06);
+  --primary:#ff6fae;
+  --primary2:#8b7bff;
+  --max: 980px;
+  --radius2: 26px;
+}
+*{ box-sizing:border-box; }
+body{
+  margin:0;
+  font-family:"Zen Maru Gothic", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", sans-serif;
+  color:var(--text);
+  background:
+    radial-gradient(900px 500px at 10% -10%, rgba(255,111,174,.18), transparent 60%),
+    radial-gradient(900px 520px at 110% 0%, rgba(139,123,255,.14), transparent 55%),
+    radial-gradient(900px 520px at 30% 110%, rgba(53,199,208,.10), transparent 55%),
+    var(--bg);
+  line-height:1.75;
+}
+a{ color:inherit; }
+.wrap{ max-width:var(--max); margin:0 auto; padding:0 16px; }
+header{ padding:14px 0 0; }
+main{ padding:14px 0 92px; }
+section{ padding:14px 0; }
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+.heroCard{
+  background: rgba(255,255,255,.70);
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius2) + 10px);
+  box-shadow: var(--shadow);
+  overflow:hidden;
+}
+.heroImageWrap{ position:relative; }
+.heroImg{ display:block; width:100%; height:auto; }
 
-  <style>
-    :root{
-      --bg:#fffafc;
-      --text:#2b2430;
-      --muted:#6b5a74;
-      --border: rgba(122, 84, 150, .14);
-      --shadow: 0 10px 30px rgba(30, 10, 60, .08);
-      --shadow2: 0 8px 20px rgba(30, 10, 60, .06);
-      --primary:#ff6fae;
-      --primary2:#8b7bff;
-      --max: 980px;
-      --radius2: 26px;
-    }
+/* 画像内ボタン（透明リンク） */
+.heroHotspot{
+  position:absolute;
+  left:8%;
+  right:8%;
+  bottom:5%;
+  height:11%;
+  background:transparent;
+  cursor:pointer;
+  border-radius:999px;
+}
 
-    *{ box-sizing:border-box; }
-    body{
-      margin:0;
-      font-family:"Zen Maru Gothic", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", sans-serif;
-      color:var(--text);
-      background:
-        radial-gradient(900px 500px at 10% -10%, rgba(255,111,174,.18), transparent 60%),
-        radial-gradient(900px 520px at 110% 0%, rgba(139,123,255,.14), transparent 55%),
-        radial-gradient(900px 520px at 30% 110%, rgba(53,199,208,.10), transparent 55%),
-        var(--bg);
-      line-height:1.75;
-    }
+/* 画像下の実CTA */
+.heroCtaArea{
+  padding: 12px 14px 14px;
+  display:grid;
+  gap:10px;
+  background: linear-gradient(180deg, rgba(255,255,255,.80), rgba(255,255,255,.95));
+}
+.metaLine{
+  font-size: 13px;
+  color: var(--muted);
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px 10px;
+  align-items:center;
+}
+.metaPill{
+  background: rgba(255,255,255,.85);
+  border:1px solid var(--border);
+  padding: 6px 10px;
+  border-radius: 999px;
+  box-shadow: var(--shadow2);
+}
+.ctaRow{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding: 14px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  text-decoration:none;
+  font-weight: 700;
+  min-width: 240px;
+  background: rgba(255,255,255,.9);
+  box-shadow: var(--shadow2);
+  transition: transform .08s ease, filter .12s ease;
+}
+.btn:hover{ transform: translateY(-1px); filter: brightness(1.01); }
+.btnPrimary{
+  background: linear-gradient(135deg, var(--primary), var(--primary2));
+  color:#fff;
+  border-color: transparent;
+  box-shadow: 0 14px 30px rgba(255,111,174,.22);
+}
+.btnPrimary::before{ content:"♡"; margin-right:8px; }
+.btnSecondary::before{ content:"⌄"; margin-right:8px; color:#6d56b0; }
 
-    a{ color:inherit; }
-    .wrap{ max-width:var(--max); margin:0 auto; padding:0 16px; }
-    header{ padding:14px 0 0; }
-    main{ padding:14px 0 84px; } /* 下固定CTA分、余白多め */
-    section{ padding:14px 0; }
+.box{
+  background: rgba(255,255,255,.72);
+  border: 1px solid var(--border);
+  border-radius: var(--radius2);
+  padding: 14px;
+  box-shadow: var(--shadow2);
+}
+.box h2{
+  margin:0 0 10px;
+  font-size: 18px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.box h2::before{ content:"✿"; color: var(--primary); font-weight:900; }
+.small{ font-size: 13px; color: var(--muted); }
 
-    /* HERO */
-    .heroCard{
-      background: rgba(255,255,255,.70);
-      border: 1px solid var(--border);
-      border-radius: calc(var(--radius2) + 10px);
-      box-shadow: var(--shadow);
-      overflow:hidden;
-    }
-    .heroImg{
-      display:block;
-      width:100%;
-      height:auto;
-    }
-    .heroCtaArea{
-      padding: 12px 14px 14px;
-      display:grid;
-      gap:10px;
-      background: linear-gradient(180deg, rgba(255,255,255,.80), rgba(255,255,255,.95));
-    }
-    .metaLine{
-      font-size: 13px;
-      color: var(--muted);
-      display:flex;
-      flex-wrap:wrap;
-      gap:8px 10px;
-      align-items:center;
-    }
-    .metaPill{
-      background: rgba(255,255,255,.85);
-      border:1px solid var(--border);
-      padding: 6px 10px;
-      border-radius: 999px;
-      box-shadow: var(--shadow2);
-    }
+.grid2{
+  display:grid;
+  gap:12px;
+  grid-template-columns: 1fr 1fr;
+}
+.cards{
+  display:grid;
+  gap:12px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card{
+  background: rgba(255,255,255,.72);
+  border: 1px solid var(--border);
+  border-radius: var(--radius2);
+  padding: 14px;
+  box-shadow: var(--shadow2);
+}
+.card h3{ margin:0 0 6px; font-size: 16px; }
+.card p{ margin:0; color: var(--muted); font-size: 14px; }
 
-    .ctaRow{
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-    }
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      padding: 14px 16px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      text-decoration:none;
-      font-weight: 700;
-      min-width: 240px;
-      background: rgba(255,255,255,.9);
-      box-shadow: var(--shadow2);
-      transition: transform .08s ease, filter .12s ease;
-    }
-    .btn:hover{ transform: translateY(-1px); filter: brightness(1.01); }
-    .btnPrimary{
-      background: linear-gradient(135deg, var(--primary), var(--primary2));
-      color:#fff;
-      border-color: transparent;
-      box-shadow: 0 14px 30px rgba(255,111,174,.22);
-    }
-    .btnPrimary::before{ content:"♡"; margin-right:8px; }
-    .btnSecondary::before{ content:"⌄"; margin-right:8px; color:#6d56b0; }
+.kvs{ display:grid; gap:10px; margin:0; }
+.kv{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  padding: 10px 0;
+  border-bottom:1px dashed rgba(122,84,150,.22);
+  font-size: 14px;
+}
+.kv:last-child{ border-bottom:0; }
+.kv b{ color:var(--text); font-weight:700; }
 
-    /* CONTENT */
-    .box{
-      background: rgba(255,255,255,.72);
-      border: 1px solid var(--border);
-      border-radius: var(--radius2);
-      padding: 14px;
-      box-shadow: var(--shadow2);
-    }
-    .box h2{
-      margin:0 0 10px;
-      font-size: 18px;
-      display:flex;
-      align-items:center;
-      gap:8px;
-    }
-    .box h2::before{
-      content:"✿";
-      color: var(--primary);
-      font-weight:900;
-    }
-    .small{ font-size: 13px; color: var(--muted); }
+.ctaBand{
+  background: linear-gradient(135deg, rgba(255,111,174,.95), rgba(139,123,255,.92));
+  color:#fff;
+  border-radius: calc(var(--radius2) + 10px);
+  padding: 16px;
+  display:grid;
+  gap:10px;
+  box-shadow: 0 18px 40px rgba(139,123,255,.22);
+}
+.ctaBand p{ margin:0; color:rgba(255,255,255,.92); font-size: 14px; }
+.ctaBand .btnPrimary{
+  background: rgba(255,255,255,.92);
+  color:#5a3e74;
+  box-shadow: 0 14px 30px rgba(0,0,0,.10);
+}
+.ctaBand .btnPrimary::before{ content:"♪"; }
 
-    .cards{
-      display:grid;
-      gap:12px;
-      grid-template-columns: repeat(3, 1fr);
-    }
-    .card{
-      background: rgba(255,255,255,.72);
-      border: 1px solid var(--border);
-      border-radius: var(--radius2);
-      padding: 14px;
-      box-shadow: var(--shadow2);
-    }
-    .card h3{ margin:0 0 6px; font-size: 16px; }
-    .card p{ margin:0; color: var(--muted); font-size: 14px; }
+/* FAQ */
+.faq{ display:grid; gap:10px; }
+.faq details{
+  background: rgba(255,255,255,.72);
+  border: 1px solid var(--border);
+  border-radius: var(--radius2);
+  padding: 12px 14px;
+  box-shadow: var(--shadow2);
+}
+.faq summary{
+  cursor:pointer;
+  font-weight:700;
+}
+.faq p{ margin:8px 0 0; color:var(--muted); font-size:14px; }
 
-    .two{
-      display:grid;
-      gap:12px;
-      grid-template-columns: 1.2fr .8fr;
-      align-items:start;
-    }
-    .kvs{ display:grid; gap:10px; margin:0; }
-    .kv{
-      display:flex;
-      justify-content:space-between;
-      gap:12px;
-      padding: 10px 0;
-      border-bottom:1px dashed rgba(122,84,150,.22);
-      font-size: 14px;
-    }
-    .kv:last-child{ border-bottom:0; }
-    .kv b{ color:var(--text); font-weight:700; }
+/* 固定CTA */
+.floating-cta{
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 12px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 24px);
+  max-width: 480px;
+  padding: 16px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  background: linear-gradient(135deg, #ff6fae, #8b7bff);
+  box-shadow: 0 12px 30px rgba(255,111,174,.35);
+}
+@media (min-width: 821px){
+  .floating-cta{ display:none; }
+  main{ padding-bottom:60px; }
+}
+@media (max-width: 820px){
+  .cards{ grid-template-columns: 1fr; }
+  .grid2{ grid-template-columns: 1fr; }
+  .btn{ width:100%; }
+}
+</style>
 
-    .ctaBand{
-      background: linear-gradient(135deg, rgba(255,111,174,.95), rgba(139,123,255,.92));
-      color:#fff;
-      border-radius: calc(var(--radius2) + 10px);
-      padding: 16px;
-      display:grid;
-      gap:10px;
-      box-shadow: 0 18px 40px rgba(139,123,255,.22);
-    }
-    .ctaBand p{ margin:0; color:rgba(255,255,255,.92); font-size: 14px; }
-    .ctaBand .btnPrimary{
-      background: rgba(255,255,255,.92);
-      color:#5a3e74;
-      box-shadow: 0 14px 30px rgba(0,0,0,.10);
-    }
-    .ctaBand .btnPrimary::before{ content:"♪"; }
-
-    footer{ padding: 18px 0; color: var(--muted); font-size: 13px; }
-    .footerCard{
-      background: rgba(255,255,255,.66);
-      border:1px solid var(--border);
-      border-radius: var(--radius2);
-      padding: 14px;
-      box-shadow: var(--shadow2);
-    }
-
-    /* スマホ下固定CTA */
-    .floating-cta{
-      position: fixed;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: 12px;
-      z-index: 9999;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      width: calc(100% - 24px);
-      max-width: 480px;
-
-      padding: 16px 18px;
-
-      border-radius: 999px;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 16px;
-      color: #fff;
-
-      background: linear-gradient(135deg, #ff6fae, #8b7bff);
-      box-shadow: 0 12px 30px rgba(255,111,174,.35);
-    }
-    @media (min-width: 821px){
-      .floating-cta{ display:none; }
-      main{ padding-bottom:60px; }
-    }
-    @media (max-width: 820px){
-      .cards{ grid-template-columns: 1fr; }
-      .two{ grid-template-columns: 1fr; }
-      .btn{ width:100%; }
-      .metaLine{ gap:8px; }
-    }
-  </style>
-
-  <!-- 構造化データ -->
-  <script type="application/ld+json">
-  {
-   "@context": "https://schema.org",
-   "@type": "MusicSchool",
-   "name": "鈴木直子ピアノ教室",
-   "url": "https://crazy-nuts.github.io/suzuki-piano/",
-   "telephone": "090-4838-8258",
-   "areaServed": "横須賀市",
-   "address": {
-     "@type": "PostalAddress",
-     "addressLocality": "横須賀市",
-     "addressCountry": "JP"
-   }
-  }
-  </script>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"MusicSchool",
+ "name":"鈴木直子ピアノ教室",
+ "url":"https://crazy-nuts.github.io/suzuki-piano/",
+ "telephone":"090-4838-8258",
+ "areaServed":"横須賀市",
+ "address":{"@type":"PostalAddress","addressLocality":"横須賀市","addressCountry":"JP"}
+}
+</script>
 </head>
 
 <body>
-  <header>
-    <div class="wrap">
-      <div class="heroCard">
-        <!-- トップ画像（スマホ最適） -->
-        <img
-          src="assets/image_main.png"
-          class="heroImg"
-          alt="鈴木直子ピアノ教室｜4歳からOK・体験レッスン受付中"
-          loading="eager"
-        />
+<header>
+  <div class="wrap">
+    <div class="heroCard">
+      <div class="heroImageWrap">
+        <img src="assets/image_main.png" class="heroImg" alt="鈴木直子ピアノ教室 トップ画像" loading="eager">
 
-        <!-- 画像下：実際にクリックできるCTA -->
-        <div class="heroCtaArea">
-          <div class="metaLine">
-            <span class="metaPill">横須賀</span>
-            <span class="metaPill">津久井幼稚園（月・水）</span>
-            <span class="metaPill">自宅教室：馬堀海岸駅最寄り</span>
-          </div>
-
-          <div class="ctaRow">
-            <a class="btn btnPrimary"
-               href="https://docs.google.com/forms/d/1W8ivGVHWLXhtx_OPrcET5a4xDFTJQ_YX1zWSBIbkxA8/viewform"
-               target="_blank" rel="noopener">
-              無料体験レッスンを申し込む
-            </a>
-            <a class="btn btnSecondary" href="#lesson">レッスン概要を見る</a>
-          </div>
-
-          <div class="small">※定員になり次第締め切りとなります。</div>
-        </div>
+        <!-- 画像内の「体験レッスンお申込み」ボタン部分 -->
+        <a class="heroHotspot"
+           href="https://docs.google.com/forms/d/1W8ivGVHWLXhtx_OPrcET5a4xDFTJQ_YX1zWSBIbkxA8/viewform"
+           target="_blank" rel="noopener"
+           aria-label="体験レッスンお申込み（Googleフォーム）"></a>
       </div>
-    </div>
-  </header>
 
-  <main>
-    <div class="wrap">
-      <!-- 教室説明 -->
-      <section>
-        <div class="box">
-          <h2>教室について</h2>
-          <p class="small">
-            お子様一人ひとりに合った内容で、楽しく笑顔になれる教室を目指しています。<br>
-            「楽しい」という気持ちを大切に、心が豊かになれるレッスンを心がけています。
-          </p>
-        </div>
-      </section>
-
-      <!-- 特徴 -->
-      <section>
-        <div class="cards">
-          <div class="card">
-            <h3>4歳が始めどき</h3>
-            <p>4〜6歳は耳の能力が急激に伸びる時期。ピアノを通じて「耳の力を使い、脳の発達を促す」最適なタイミングです。</p>
-          </div>
-          <div class="card">
-            <h3>ピアノが大好きに</h3>
-            <p>一人ひとりのお子様に合わせた内容で、楽しく続けられるレッスンを行います。</p>
-          </div>
-          <div class="card">
-            <h3>親子同伴レッスン</h3>
-            <p>低年齢の間は保護者様同伴で安心。保護者様のピアノ経験は必要ありません。</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- 講師＋概要 -->
-      <section class="two">
-        <div class="box">
-          <h2>講師紹介</h2>
-          <p class="small">
-            <b>鈴木 直子</b><br>
-            約20年にわたり大手音楽教室で講師を務めてきました。<br>
-            現在は幼稚園と自宅（馬堀海岸駅最寄り）にて、お子様一人ひとりに合わせたレッスンを提供しています。
-          </p>
+      <div class="heroCtaArea">
+        <div class="metaLine">
+          <span class="metaPill">横須賀</span>
+          <span class="metaPill">津久井幼稚園（月・水）</span>
+          <span class="metaPill">馬堀海岸駅最寄り</span>
+          <span class="metaPill">初心者歓迎</span>
+          <span class="metaPill">親子同伴OK</span>
         </div>
 
-        <div class="box" id="lesson">
-          <h2>レッスン概要</h2>
-          <div class="kvs">
-            <div class="kv"><b>入会金</b><span>3,000円</span></div>
-            <div class="kv"><b>月謝</b><span>6,000円〜</span></div>
-            <div class="kv"><b>回数</b><span>年40回</span></div>
-            <div class="kv"><b>時間</b><span>30分レッスン</span></div>
-            <div class="kv"><b>会場</b><span>津久井幼稚園（月・水）／自宅（馬堀海岸駅最寄り）</span></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CTA -->
-      <section>
-        <div class="ctaBand">
-          <div>
-            <b>無料体験レッスン実施中</b>
-            <p>まずは教室の雰囲気を体験してください。無理な勧誘はありません。</p>
-          </div>
+        <div class="ctaRow">
           <a class="btn btnPrimary"
              href="https://docs.google.com/forms/d/1W8ivGVHWLXhtx_OPrcET5a4xDFTJQ_YX1zWSBIbkxA8/viewform"
-             target="_blank" rel="noopener">
-            無料体験レッスンを申し込む
-          </a>
+             target="_blank" rel="noopener">無料体験レッスンを申し込む</a>
+          <a class="btn btnSecondary" href="#how">体験レッスンの流れを見る</a>
         </div>
-      </section>
 
-      <!-- お問い合わせ -->
-      <section class="box">
-        <h2>お問い合わせ</h2>
-        <p class="small">
-          TEL：090-4838-8258<br>
-          Mail：hiamoe.nao@gmail.com
-        </p>
-      </section>
-    </div>
-  </main>
-
-  <footer>
-    <div class="wrap">
-      <div class="footerCard">
-        <div>© 鈴木直子ピアノ教室</div>
-        <div class="small">横須賀｜津久井幼稚園会場（月・水）／馬堀海岸駅最寄り</div>
+        <div class="small">
+          ※体験後に入会するかどうかは自由です。無理な勧誘はありません。
+        </div>
       </div>
     </div>
-  </footer>
+  </div>
+</header>
 
-  <!-- スマホ下固定CTA -->
-  <a href="https://docs.google.com/forms/d/1W8ivGVHWLXhtx_OPrcET5a4xDFTJQ_YX1zWSBIbkxA8/viewform"
-     class="floating-cta"
-     target="_blank"
-     rel="noopener">
-     ♪ 無料体験レッスンを申し込む
-  </a>
+<main>
+  <div class="wrap">
+
+    <!-- ①不安つぶし（申込率に直結） -->
+    <section class="grid2">
+      <div class="box">
+        <h2>はじめてでも大丈夫</h2>
+        <p class="small">
+          「うちの子、続くかな？」「先生との相性は？」そんな不安を、体験レッスンで確認できます。<br>
+          お子様のペースに合わせて進めるので、ピアノが初めてでも安心です。
+        </p>
+      </div>
+      <div class="box">
+        <h2>こんな方におすすめ</h2>
+        <ul class="small" style="text-align:left; margin:0; padding-left:18px;">
+          <li>4歳〜小学生で、楽しく習いごとを始めたい</li>
+          <li>人見知りで、少人数の個人レッスンが合いそう</li>
+          <li>基礎から丁寧に、無理なく続けたい</li>
+          <li>保護者同伴で安心して始めたい</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ②教室説明（信頼） -->
+    <section>
+      <div class="box">
+        <h2>教室について</h2>
+        <p class="small">
+          お子様一人ひとりに合わせた内容で、楽しく笑顔になれる教室を目指しています。<br>
+          「できた！」の積み重ねで自信につなげ、音楽を好きになる時間を大切にします。
+        </p>
+      </div>
+    </section>
+
+    <!-- ③特徴（理由づけ） -->
+    <section>
+      <div class="cards">
+        <div class="card">
+          <h3>4歳が始めどき</h3>
+          <p>4〜6歳は耳の能力が伸びる時期。リズム・音感も、遊び感覚で自然に育てます。</p>
+        </div>
+        <div class="card">
+          <h3>個人レッスンで安心</h3>
+          <p>お子様の性格・集中力に合わせて内容を調整。無理なく、楽しく続けられます。</p>
+        </div>
+        <div class="card">
+          <h3>親子同伴OK</h3>
+          <p>低年齢の間は保護者同伴で安心。保護者様のピアノ経験は必要ありません。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ④体験の流れ（申込率が上がる） -->
+    <section id="how">
+      <div class="box">
+        <h2>体験レッスンの流れ（約30分）</h2>
+        <ol class="small" style="text-align:left; margin:0; padding-left:18px;">
+          <li>ごあいさつ・お子様の様子確認（好きなこと、経験など）</li>
+          <li>鍵盤に触れてみる（音遊び・リズム）</li>
+          <li>簡単なフレーズにチャレンジ</li>
+          <li>教室の進め方・教材・ご家庭での練習の考え方をご説明</li>
+          <li>ご質問タイム（入会はその場で決めなくてOK）</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ⑤講師＋レッスン概要（信頼＆価格） -->
+    <section class="grid2">
+      <div class="box">
+        <h2>講師紹介</h2>
+        <p class="small">
+          <b>鈴木 直子</b><br>
+          大手音楽教室で約20年の指導経験。<br>
+          現在は幼稚園会場と自宅（馬堀海岸駅最寄り）にて、丁寧な個別指導を行っています。
+        </p>
+      </div>
+
+      <div class="box" id="lesson">
+        <h2>レッスン概要</h2>
+        <div class="kvs">
+          <div class="kv"><b>入会金</b><span>3,000円</span></div>
+          <div class="kv"><b>月謝</b><span>6,000円〜</span></div>
+          <div class="kv"><b>回数</b><span>年40回</span></div>
+          <div class="kv"><b>時間</b><span>30分レッスン</span></div>
+          <div class="kv"><b>会場</b><span>津久井幼稚園（月・水）／自宅（馬堀海岸駅最寄り）</span></div>
+        </div>
+        <div class="small" style="margin-top:8px;">※年齢・レベルに合わせて内容を調整します。</div>
+      </div>
+    </section>
+
+    <!-- ⑥FAQ（最後の不安を潰す） -->
+    <section>
+      <div class="box">
+        <h2>よくあるご質問</h2>
+        <div class="faq">
+          <details>
+            <summary>親がピアノ未経験でも大丈夫ですか？</summary>
+            <p>大丈夫です。ご家庭での声かけや練習のコツも、必要に応じて分かりやすくお伝えします。</p>
+          </details>
+          <details>
+            <summary>人見知りですが、体験できますか？</summary>
+            <p>もちろん可能です。無理に進めず、様子を見ながらゆっくり始めます。保護者同伴もOKです。</p>
+          </details>
+          <details>
+            <summary>体験したら入会しないといけませんか？</summary>
+            <p>いいえ。体験後にご家庭で検討していただいて大丈夫です。無理な勧誘は行いません。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ⑦最終CTA -->
+    <section>
+      <div class="ctaBand">
+        <div>
+          <b>無料体験レッスン受付中</b>
+          <p>まずは教室の雰囲気を体験してください。入会は後日でOKです。</p>
+        </div>
+        <a class="btn btnPrimary"
+           href="https://docs.google.com/forms/d/1W8ivGVHWLXhtx_OPrcET5a4xDFTJQ_YX1zWSBIbkxA8/viewform"
+           target="_blank" rel="noopener">無料体験レッスンを申し込む</a>
+      </div>
+    </section>
+
+    <!-- ⑧問い合わせ -->
+    <section class="box">
+      <h2>お問い合わせ</h2>
+      <p class="small">
+        TEL：090-4838-8258<br>
+        Mail：hiamoe.nao@gmail.com
+      </p>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="box" style="text-align:left;">
+      <div><b>© 鈴木直子ピアノ教室</b></div>
+      <div class="small">横須賀｜津久井幼稚園会場（月・水）／馬堀海岸駅最寄り</div>
+    </div>
+  </div>
+</footer>
+
+<!-- スマホ下固定CTA -->
+<a href="https://docs.google.com/forms/d/1W8ivGVHWLXhtx_OPrcET5a4xDFTJQ_YX1zWSBIbkxA8/viewform"
+   class="floating-cta"
+   target="_blank"
+   rel="noopener">♪ 無料体験レッスンを申し込む</a>
+
 </body>
 </html>
