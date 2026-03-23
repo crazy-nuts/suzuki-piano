@@ -2,8 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>https://crazy-nuts.github.io/suzuki-piano/</loc>
+<loc>https://crazy-nuts.github.io/suzuki-piano/index.html</loc>
 <priority>1.0</priority>
+</url>
+
+<url>
+<loc>https://crazy-nuts.github.io/suzuki-piano/blog/piano-start-age-4.html</loc>
+<priority>0.8</priority>
+</url>
+
+<url>
+<loc>https://crazy-nuts.github.io/suzuki-piano/blog/piano-start-age-3.html</loc>
+<priority>0.8</priority>
+</url>
+
+<url>
+<loc>https://crazy-nuts.github.io/suzuki-piano/blog/piano-start-elementary.html</loc>
+<priority>0.8</priority>
+</url>
+
+<url>
+<loc>https://crazy-nuts.github.io/suzuki-piano/blog/piano-class-choice-yokosuka.html</loc>
+<priority>0.8</priority>
+</url>
+
+<url>
+<loc>https://crazy-nuts.github.io/suzuki-piano/blog/piano-practice-reluctant-child.html</loc>
+<priority>0.8</priority>
+</url>
+
+<url>
+<loc>https://crazy-nuts.github.io/suzuki-piano/blog/piano-school-maborikaigan-uraga.html</loc>
+<priority>0.8</priority>
 </url>
 
 </urlset>
