@@ -4,227 +4,427 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-<title>ピアノ教室ブログ一覧｜横須賀市 鈴木直子ピアノ教室</title>
-<meta name="description" content="ピアノは何歳から？教室選びは？練習しない時は？横須賀市の鈴木直子ピアノ教室のブログ記事一覧です。">
-
+<title>ピアノ教室ブログ一覧｜横須賀市で子どものピアノを始める前に読みたい記事</title>
+<meta name="description" content="横須賀市で子どものピアノ教室を探している保護者の方へ。何歳から始めるか、教室の選び方、練習しないときの対応などをまとめたブログ一覧です。">
+<meta name="robots" content="index,follow">
 <link rel="canonical" href="https://crazy-nuts.github.io/suzuki-piano/blog/">
 
+<meta property="og:type" content="website">
+<meta property="og:title" content="ピアノ教室ブログ一覧｜横須賀市で子どものピアノを始める前に読みたい記事">
+<meta property="og:description" content="横須賀市で子どものピアノ教室を探している保護者の方向けに、年齢別の始め方や教室選びのポイントをまとめたブログ一覧です。">
+<meta property="og:url" content="https://crazy-nuts.github.io/suzuki-piano/blog/">
+<meta property="og:image" content="https://crazy-nuts.github.io/suzuki-piano/assets/blog-hero.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ピアノ教室ブログ一覧｜横須賀市で子どものピアノを始める前に読みたい記事">
+<meta name="twitter:description" content="何歳から始めるか、教室の選び方、練習しないときの対応などをまとめたブログ一覧です。">
+<meta name="twitter:image" content="https://crazy-nuts.github.io/suzuki-piano/assets/blog-hero.png">
+
 <style>
-
-/* ===== 記事Design System完全踏襲 ===== */
-
 :root{
---bg:#fffafb;
---card:#ffffff;
---border:#f3e3e8;
---border-strong:#eec9d2;
---text:#333;
---text-dark:#222;
---muted:#777;
---accent:#e58aa3;
---accent-dark:#c45c7b;
---max-width:860px;
---radius:18px;
+  --bg:#fffafb;
+  --card:#ffffff;
+  --sub-bg:#fff5f7;
+  --sub-bg-2:#fff0f4;
+  --border:#f3e3e8;
+  --border-strong:#eec9d2;
+  --text:#333333;
+  --text-dark:#222222;
+  --muted:#777777;
+  --accent:#e58aa3;
+  --accent-dark:#c45c7b;
+  --max-width:860px;
+  --radius:18px;
 }
-
 *{box-sizing:border-box}
-
+html{scroll-behavior:smooth}
 body{
-margin:0;
-background:var(--bg);
-font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic","Meiryo",sans-serif;
-line-height:1.9;
-color:var(--text);
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic","Meiryo",sans-serif;
+  line-height:1.9;
+  -webkit-text-size-adjust:100%;
 }
+a{color:var(--accent-dark)}
+img{max-width:100%;height:auto}
 
-.article-page{padding:20px 20px 80px}
-.article-wrap{max-width:var(--max-width);margin:auto}
+.article-page{padding:20px 20px 72px}
+.article-wrap{max-width:var(--max-width);margin:0 auto}
 
 .breadcrumb{
-font-size:13px;
-margin-bottom:16px;
-color:#999;
+  font-size:14px;
+  color:#9a8890;
+  margin-bottom:18px;
 }
-
-.breadcrumb a{color:#999;text-decoration:none}
+.breadcrumb a{
+  color:#9a8890;
+  text-decoration:none;
+}
+.breadcrumb a:hover{text-decoration:underline}
 
 .article-hero{
-background:var(--card);
-border:1px solid var(--border);
-border-radius:24px;
-padding:26px;
-margin-bottom:30px;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:24px;
+  padding:26px 24px;
+  margin-bottom:28px;
 }
-
 .hero-image{
-border-radius:18px;
-overflow:hidden;
-margin-bottom:16px;
+  margin:0 0 18px;
+  border-radius:18px;
+  overflow:hidden;
+  max-height:380px;
 }
-
 .hero-image img{
-width:100%;
-display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
 }
 
 .article-label{
-display:inline-block;
-background:#ffe9ef;
-padding:6px 12px;
-border-radius:999px;
-font-size:13px;
-font-weight:700;
-color:var(--accent-dark);
-margin-bottom:12px;
+  display:inline-block;
+  margin-bottom:14px;
+  padding:6px 12px;
+  border-radius:999px;
+  background:#ffe9ef;
+  color:var(--accent-dark);
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:.04em;
 }
 
 h1{
-margin:0 0 12px;
-font-size:32px;
-color:var(--text-dark);
+  margin:0 0 12px;
+  font-size:34px;
+  line-height:1.45;
+  color:var(--text-dark);
+  font-weight:700;
+}
+.article-meta{
+  font-size:14px;
+  color:var(--muted);
+  margin-bottom:16px;
+}
+.lead{
+  margin:0;
+  font-size:17px;
 }
 
-.lead{font-size:17px}
+.toc,.summary-box,.cta-box,.related-box,.intro-box{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:24px;
+  margin:0 0 28px;
+}
+.toc{
+  background:var(--sub-bg-2);
+  border-color:var(--border-strong);
+}
+.toc-title,.box-title{
+  display:block;
+  margin-bottom:10px;
+  font-size:18px;
+  font-weight:700;
+  color:var(--accent-dark);
+}
+.toc ol{
+  margin:0;
+  padding-left:1.25em;
+}
+.toc li{margin-bottom:8px}
+.toc a{
+  text-decoration:none;
+}
+.toc a:hover{text-decoration:underline}
 
-/* ===== 記事カードGRID ===== */
+h2{
+  margin:48px 0 18px;
+  padding-left:14px;
+  border-left:5px solid var(--accent);
+  font-size:26px;
+  line-height:1.5;
+  color:var(--text-dark);
+}
+p{
+  margin:0 0 18px;
+  font-size:16px;
+}
+ul{
+  margin:0 0 22px 1.2em;
+  padding:0;
+}
+li{
+  margin-bottom:10px;
+  font-size:16px;
+}
 
 .article-grid{
-display:grid;
-grid-template-columns:1fr;
-gap:18px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+  margin-bottom:28px;
 }
-
-@media(min-width:640px){
-.article-grid{
-grid-template-columns:1fr 1fr;
-}
-}
-
 .index-card{
-display:block;
-background:var(--card);
-border:1px solid var(--border);
-border-radius:var(--radius);
-padding:20px;
-text-decoration:none;
-color:inherit;
-transition:.25s;
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:22px;
+  text-decoration:none;
+  transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
 }
-
 .index-card:hover{
-transform:translateY(-4px);
-border-color:var(--border-strong);
-box-shadow:0 8px 22px rgba(0,0,0,.06);
+  transform:translateY(-2px);
+  border-color:var(--border-strong);
+  box-shadow:0 10px 22px rgba(0,0,0,.05);
+  text-decoration:none;
 }
-
+.card-category{
+  display:inline-block;
+  align-self:flex-start;
+  margin-bottom:10px;
+  padding:5px 10px;
+  border-radius:999px;
+  background:#fff5f7;
+  border:1px solid var(--border);
+  font-size:12px;
+  font-weight:700;
+  color:var(--accent-dark);
+}
 .index-card h3{
-margin:0 0 8px;
-font-size:19px;
-color:var(--accent-dark);
+  margin:0 0 8px;
+  font-size:20px;
+  line-height:1.6;
+  color:var(--accent-dark);
 }
-
 .index-card p{
-margin:0;
-font-size:14px;
-color:var(--muted);
+  margin:0 0 12px;
+  font-size:15px;
+  color:var(--text);
+}
+.card-link{
+  margin-top:auto;
+  font-size:14px;
+  font-weight:700;
+  color:var(--accent-dark);
 }
 
-/* ===== CTA ===== */
+.summary-box{
+  background:#fff7fa;
+}
 
 .cta-box{
-margin-top:44px;
-text-align:center;
-background:linear-gradient(135deg,#fff3f7,#fffafd);
-border:1px solid #f1d5de;
-border-radius:var(--radius);
-padding:30px;
+  margin-top:42px;
+  text-align:center;
+  background:linear-gradient(135deg,#fff3f7 0%,#fffafd 100%);
+  border-color:#f1d5de;
 }
-
+.cta-box h2{
+  border:0;
+  padding:0;
+  margin:0 0 12px;
+  font-size:28px;
+}
+.btn-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  justify-content:center;
+  margin-top:18px;
+}
 .btn{
-display:inline-block;
-padding:14px 26px;
-border-radius:999px;
-background:var(--accent);
-color:#fff;
-text-decoration:none;
-font-weight:700;
+  display:inline-block;
+  min-width:220px;
+  padding:14px 24px;
+  border-radius:999px;
+  text-decoration:none;
+  font-size:15px;
+  font-weight:700;
+  transition:transform .2s ease,opacity .2s ease,background .2s ease;
+  box-sizing:border-box;
+  text-align:center;
+}
+.btn-primary{
+  background:var(--accent);
+  color:#ffffff;
+}
+.btn-primary:hover{
+  opacity:.92;
+  transform:translateY(-1px);
+}
+.btn-secondary{
+  background:#ffffff;
+  color:var(--accent-dark);
+  border:1px solid var(--accent);
+}
+.btn-secondary:hover{
+  background:#fff0f4;
 }
 
+.back-top{
+  margin-top:12px;
+  text-align:center;
+  font-size:14px;
+}
+.back-top a{
+  text-decoration:none;
+}
+.back-top a:hover{text-decoration:underline}
+
+@media (max-width:767px){
+  .article-page{padding:16px 16px 56px}
+  .article-hero,.toc,.summary-box,.cta-box,.related-box,.intro-box{padding:20px 18px}
+  h1{font-size:28px}
+  h2{font-size:22px}
+  .lead{font-size:16px}
+  .article-grid{grid-template-columns:1fr}
+  .btn{width:100%;min-width:0}
+  .hero-image{max-height:260px}
+}
 </style>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"CollectionPage",
+  "name":"ピアノ教室ブログ一覧",
+  "url":"https://crazy-nuts.github.io/suzuki-piano/blog/",
+  "description":"横須賀市で子どものピアノ教室を探している保護者の方へ向けたブログ記事一覧ページです。",
+  "inLanguage":"ja"
+}
+</script>
 </head>
 
 <body>
-
 <main class="article-page">
 <article class="article-wrap">
 
-<nav class="breadcrumb">
-<a href="../">ホーム</a> ＞ ブログ一覧
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <a href="../index.html">ホーム</a> ＞ コラム一覧
 </nav>
 
 <header class="article-hero">
+  <div class="hero-image">
+    <img src="../assets/blog-hero.png" alt="ピアノ教室コラム一覧">
+  </div>
 
-<div class="hero-image">
-<img src="../images/blog-hero.jpg" alt="ピアノを始める前に読みたいコラム">
-</div>
-
-<div class="article-label">ピアノを始める前に読みたいコラム</div>
-
-<h1>ピアノを始める前に読みたいコラム一覧</h1>
-
-<p class="lead">
-ピアノは何歳から？教室選びは？練習しないときは？  
-横須賀市でピアノ教室を探している保護者の方向けの記事をまとめています。
-</p>
-
+  <div class="article-label">ピアノを始める前に読みたいコラム</div>
+  <h1>ピアノ教室コラム一覧</h1>
+  <div class="article-meta">横須賀市で子どものピアノ教室を探している保護者の方へ</div>
+  <p class="lead">
+    ピアノは何歳から始める？ 教室選びはどう考える？ 練習しないときはどうする？
+    はじめての習いごとや教室選びで迷ったときに役立つ記事をまとめています。
+  </p>
 </header>
 
-<section class="article-grid">
-
-<a class="index-card" href="./piano-start-age-4.html">
-<h3>ピアノはいつから？4歳から始めるメリット</h3>
-<p>音感・集中力・成功体験の観点から解説</p>
-</a>
-
-<a class="index-card" href="./piano-start-age-3.html">
-<h3>3歳でピアノは早い？</h3>
-<p>向いているケースと無理しない始め方</p>
-</a>
-
-<a class="index-card" href="./piano-start-elementary.html">
-<h3>小学生からピアノは遅い？</h3>
-<p>理解力を活かしたスタート方法</p>
-</a>
-
-<a class="index-card" href="./piano-class-choice-yokosuka.html">
-<h3>横須賀でピアノ教室の選び方</h3>
-<p>個人教室と大手の違いを解説</p>
-</a>
-
-<a class="index-card" href="./piano-practice-reluctant-child.html">
-<h3>練習しない子はどうする？</h3>
-<p>親の関わり方と続く教室の特徴</p>
-</a>
-
-<a class="index-card" href="./piano-school-maborikaigan-uraga.html">
-<h3>馬堀海岸・浦賀で教室探し</h3>
-<p>通いやすさの重要性</p>
-</a>
-
+<section class="toc" aria-label="目次">
+  <span class="toc-title">このページで読めること</span>
+  <ol>
+    <li><a href="#age-guides">年齢別の始め方</a></li>
+    <li><a href="#school-choice">教室選びのポイント</a></li>
+    <li><a href="#parent-concerns">保護者のよくある悩み</a></li>
+    <li><a href="#local-guide">地域で教室を探す方へ</a></li>
+  </ol>
 </section>
 
-<section class="cta-box">
-<h2>無料体験レッスン受付中</h2>
-<p>まずは教室の雰囲気を体験してください</p>
-<p>
-<a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfPO43fJrbqBhRFMAvBFYjVZ2mKgjwT_j_esNJCOItore-iYw/viewform">
-無料体験を申し込む
-</a>
-</p>
+<section class="intro-box">
+  <span class="box-title">コラム一覧の使い方</span>
+  <p>
+    「何歳から始めるのがよいのか知りたい方」は年齢別ガイドから、
+    「どんな教室を選べばよいか迷っている方」は教室選びの記事から読むと整理しやすくなります。
+  </p>
 </section>
+
+<h2 id="age-guides">年齢別の始め方</h2>
+
+<section class="article-grid" aria-label="年齢別ガイド">
+  <a class="index-card" href="./piano-start-age-4.html">
+    <span class="card-category">年齢別ガイド</span>
+    <h3>ピアノはいつから？4歳から始めるメリット</h3>
+    <p>4歳からピアノを始めるメリットを、音感・集中力・自己表現・成功体験の視点からわかりやすく解説します。</p>
+    <span class="card-link">記事を読む</span>
+  </a>
+
+  <a class="index-card" href="./piano-start-age-3.html">
+    <span class="card-category">年齢別ガイド</span>
+    <h3>3歳でピアノは早い？始める前に知っておきたいこと</h3>
+    <p>3歳スタートが向いているケースと、まだ早い場合の考え方をやさしく整理しています。</p>
+    <span class="card-link">記事を読む</span>
+  </a>
+
+  <a class="index-card" href="./piano-start-elementary.html">
+    <span class="card-category">年齢別ガイド</span>
+    <h3>小学生からピアノを始めるのは遅い？</h3>
+    <p>小学生から始めるメリットや、理解力を活かして無理なく続けるポイントを解説します。</p>
+    <span class="card-link">記事を読む</span>
+  </a>
+</section>
+
+<h2 id="school-choice">教室選びのポイント</h2>
+
+<section class="article-grid" aria-label="教室選び">
+  <a class="index-card" href="./piano-class-choice-yokosuka.html">
+    <span class="card-category">教室選び</span>
+    <h3>横須賀市でピアノ教室の選び方｜個人教室と大手の違い</h3>
+    <p>横須賀市でピアノ教室を探している保護者の方へ。個人教室と大手教室の違いや、失敗しにくい選び方を解説します。</p>
+    <span class="card-link">記事を読む</span>
+  </a>
+</section>
+
+<h2 id="parent-concerns">保護者のよくある悩み</h2>
+
+<section class="article-grid" aria-label="保護者向け">
+  <a class="index-card" href="./piano-practice-reluctant-child.html">
+    <span class="card-category">保護者向け</span>
+    <h3>ピアノを習っても練習しない子はどうする？続く教室の特徴</h3>
+    <p>練習しない理由や、家庭での関わり方、続きやすい教室の特徴を保護者向けに整理しています。</p>
+    <span class="card-link">記事を読む</span>
+  </a>
+</section>
+
+<h2 id="local-guide">地域で教室を探す方へ</h2>
+
+<section class="article-grid" aria-label="地域ガイド">
+  <a class="index-card" href="./piano-school-maborikaigan-uraga.html">
+    <span class="card-category">地域ガイド</span>
+    <h3>馬堀海岸・浦賀エリアでピアノ教室を探している方へ</h3>
+    <p>馬堀海岸・浦賀エリアで、通いやすく続けやすいピアノ教室を探すポイントをご紹介します。</p>
+    <span class="card-link">記事を読む</span>
+  </a>
+</section>
+
+<section class="summary-box">
+  <span class="box-title">こんな方におすすめです</span>
+  <ul>
+    <li>横須賀市で4歳から通えるピアノ教室を探している</li>
+    <li>子どもに合う教室の選び方を知りたい</li>
+    <li>練習しないときの関わり方に悩んでいる</li>
+    <li>馬堀海岸・浦賀周辺で通いやすい教室を探している</li>
+  </ul>
+</section>
+
+<section class="cta-box" aria-label="体験レッスン案内">
+  <h2>無料体験レッスン受付中</h2>
+  <p>
+    教室の雰囲気や先生との相性が気になる方は、まずは体験レッスンでご確認ください。<br>
+    体験後に入会するかどうかは自由です。無理な勧誘はありません。
+  </p>
+  <div class="btn-row">
+    <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfPO43fJrbqBhRFMAvBFYjVZ2mKgjwT_j_esNJCOItore-iYw/viewform" target="_blank" rel="noopener noreferrer">無料体験レッスンを申し込む</a>
+    <a class="btn btn-secondary" href="../index.html">教室トップページを見る</a>
+  </div>
+</section>
+
+<div class="back-top">
+  <a href="../index.html">← 教室トップページへ戻る</a>
+</div>
 
 </article>
 </main>
-
 </body>
 </html>
