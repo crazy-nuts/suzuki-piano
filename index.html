@@ -75,22 +75,6 @@ section{ padding:14px 0; }
 .heroImageWrap{ position:relative; }
 .heroImg{ display:block; width:100%; height:auto; }
 
-/* 画像内ボタン（透明リンク） */
-.heroHotspot{
-position:absolute;
-left:8%;
-right:8%;
-bottom:4%;
-height:14%;
-min-height:48px;
-
-display:block;
-  background:transparent;
-  cursor:pointer;
-  border-radius:999px;
-  z-index:2;
-  -webkit-tap-highlight-color: transparent;
-}
 
 /* 画像下の実CTA */
 .heroCtaArea{
@@ -98,6 +82,13 @@ display:block;
   display:grid;
   gap:10px;
   background: linear-gradient(180deg, rgba(255,255,255,.80), rgba(255,255,255,.95));
+}
+.hero-cv-copy{
+  margin:0;
+  font-size:14px;
+  line-height:1.7;
+  color:#5a4a63;
+  font-weight:600;
 }
 .metaLine{
   font-size: 13px;
@@ -225,6 +216,18 @@ display:block;
 .faq p{ margin:8px 0 0; color:var(--muted); font-size:14px; }
 
 /* 固定CTA */
+.floating-cta-note{
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 70px;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  font-size:12px;
+  padding:6px 10px;
+  border-radius:999px;
+  z-index:9998;
+}
 .floating-cta{
   position: fixed;
   left: 50%;
@@ -246,7 +249,8 @@ display:block;
   box-shadow: 0 12px 30px rgba(255,111,174,.35);
 }
 @media (min-width: 821px){
-  .floating-cta{ display:none; }
+  .floating-cta,
+  .floating-cta-note{ display:none; }
   main{ padding-bottom:60px; }
 }
 @media (max-width: 820px){
@@ -385,16 +389,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="heroCard">
       <div class="heroImageWrap">
         <img src="assets/image_main.png" class="heroImg" alt="横須賀市のピアノ教室 鈴木直子ピアノ教室 ピアノレッスン" loading="eager">
-
-        <!-- 画像内の「体験レッスンお申込み」ボタン部分 -->
-        <a class="heroHotspot"
-data-cta="trial-form"
-           href="https://docs.google.com/forms/d/e/1FAIpQLSfPO43fJrbqBhRFMAvBFYjVZ2mKgjwT_j_esNJCOItore-iYw/viewform"
-           target="_blank" rel="noopener"
-           aria-label="体験レッスンお申込み（Googleフォーム）"></a>
       </div>
 
       <div class="heroCtaArea">
+        <p class="hero-cv-copy">
+          まずは30分の無料体験レッスンから始めませんか？<br>
+          入会するかどうかは体験後にゆっくりご検討いただけます。
+        </p>
         <div class="metaLine">
           <span class="metaPill">横須賀</span>
           <span class="metaPill">津久井幼稚園（月・火・水）</span>
@@ -422,6 +423,29 @@ target="_blank" rel="noopener">
 
 <main>
   <div class="wrap">
+
+    <section class="box" style="text-align:center;">
+      <h2>まずは無料体験で教室の雰囲気を見てみませんか？</h2>
+
+      <p class="small">
+        「続くかな？」「うちの子に合うかな？」<br>
+        そんな不安を体験レッスンで確認できます。<br>
+        入会するかどうかは後日ゆっくりご検討ください。
+      </p>
+
+      <div style="margin-top:12px;">
+        <a class="btn btnPrimary"
+           data-cta="trial-form"
+           href="https://docs.google.com/forms/d/e/1FAIpQLSfPO43fJrbqBhRFMAvBFYjVZ2mKgjwT_j_esNJCOItore-iYw/viewform"
+           target="_blank" rel="noopener">
+          無料体験レッスンを見てみる
+        </a>
+      </div>
+
+      <p class="small" style="margin-top:6px;">
+        ※体験のみのご参加も歓迎です
+      </p>
+    </section>
 
     <!-- ①不安つぶし（申込率に直結） -->
     <section class="grid2">
@@ -472,6 +496,19 @@ target="_blank" rel="noopener">
       </div>
     </section>
 
+    <section style="text-align:center;">
+      <a class="btn btnPrimary"
+         data-cta="trial-form"
+         href="https://docs.google.com/forms/d/e/1FAIpQLSfPO43fJrbqBhRFMAvBFYjVZ2mKgjwT_j_esNJCOItore-iYw/viewform"
+         target="_blank" rel="noopener">
+        無料体験レッスンを見てみる
+      </a>
+
+      <p class="small" style="margin-top:6px;">
+        まずは教室の雰囲気を体験できます
+      </p>
+    </section>
+
     <!-- ④体験の流れ（申込率が上がる） -->
     <section id="how">
       <div class="box">
@@ -515,6 +552,23 @@ target="_blank" rel="noopener">
           <div class="kv"><b>会場</b><span>津久井幼稚園（月・火・水）／自宅（馬堀海岸駅最寄り）</span></div>
         </div>
         <div class="small" style="margin-top:8px;">※年齢・レベルに合わせて内容を調整します。</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="box">
+        <h2>これまで多くのお子さまが通っています</h2>
+
+        <p class="small">
+          大手音楽教室で約20年、独立後も指導を続け、<br>
+          <strong>これまで数百名以上のお子さまのレッスンを担当</strong>してきました。
+        </p>
+
+        <p class="small">
+          はじめてピアノに触れる幼児さんから、<br>
+          「ピアノが好き！」と続けてくれる小学生まで、<br>
+          一人ひとりのペースを大切にしたレッスンを行っています。
+        </p>
       </div>
     </section>
 
@@ -663,11 +717,12 @@ target="_blank" rel="noopener">
       <div class="ctaBand">
         <div>
           <b>無料体験レッスン受付中</b>
-          <p>まずは教室の雰囲気を体験してください。入会は後日でOKです。</p>
+          <p>現在、体験レッスンは各曜日数名ずつの受付となっています。<br>
+          ご希望の時間帯がある方はお早めにご相談ください。</p>
         </div>
         <a class="btn btnPrimary"
            href="https://docs.google.com/forms/d/e/1FAIpQLSfPO43fJrbqBhRFMAvBFYjVZ2mKgjwT_j_esNJCOItore-iYw/viewform"
-           target="_blank" rel="noopener">無料体験レッスンを申し込む</a>
+           target="_blank" rel="noopener">無料体験レッスンを見てみる</a>
       </div>
     </section>
 
