@@ -20,273 +20,7 @@
 <meta name="twitter:description" content="何歳から始めるか、教室の選び方、練習しないときの対応などをまとめたブログ一覧です。">
 <meta name="twitter:image" content="https://crazy-nuts.github.io/suzuki-piano/assets/blog-hero.png">
 
-<style>
-:root{
-  --bg:#fffafb;
-  --card:#ffffff;
-  --sub-bg:#fff5f7;
-  --sub-bg-2:#fff0f4;
-  --border:#f3e3e8;
-  --border-strong:#eec9d2;
-  --text:#333333;
-  --text-dark:#222222;
-  --muted:#777777;
-  --accent:#e58aa3;
-  --accent-dark:#c45c7b;
-  --max-width:860px;
-  --radius:18px;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  margin:0;
-  background:var(--bg);
-  color:var(--text);
-  font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic","Meiryo",sans-serif;
-  line-height:1.9;
-  -webkit-text-size-adjust:100%;
-}
-a{color:var(--accent-dark)}
-img{max-width:100%;height:auto}
-
-.article-page{padding:20px 20px 72px}
-.article-wrap{max-width:var(--max-width);margin:0 auto}
-
-.breadcrumb{
-  font-size:14px;
-  color:#9a8890;
-  margin-bottom:18px;
-}
-.breadcrumb a{
-  color:#9a8890;
-  text-decoration:none;
-}
-.breadcrumb a:hover{text-decoration:underline}
-
-.article-hero{
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:24px;
-  padding:26px 24px;
-  margin-bottom:28px;
-}
-.hero-image{
-  margin:0 0 18px;
-  border-radius:18px;
-  overflow:hidden;
-  max-height:380px;
-}
-.hero-image img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-}
-
-.article-label{
-  display:inline-block;
-  margin-bottom:14px;
-  padding:6px 12px;
-  border-radius:999px;
-  background:#ffe9ef;
-  color:var(--accent-dark);
-  font-size:13px;
-  font-weight:700;
-  letter-spacing:.04em;
-}
-
-h1{
-  margin:0 0 12px;
-  font-size:34px;
-  line-height:1.45;
-  color:var(--text-dark);
-  font-weight:700;
-}
-.article-meta{
-  font-size:14px;
-  color:var(--muted);
-  margin-bottom:16px;
-}
-.lead{
-  margin:0;
-  font-size:17px;
-}
-
-.toc,.summary-box,.cta-box,.related-box,.intro-box{
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:var(--radius);
-  padding:24px;
-  margin:0 0 28px;
-}
-.toc{
-  background:var(--sub-bg-2);
-  border-color:var(--border-strong);
-}
-.toc-title,.box-title{
-  display:block;
-  margin-bottom:10px;
-  font-size:18px;
-  font-weight:700;
-  color:var(--accent-dark);
-}
-.toc ol{
-  margin:0;
-  padding-left:1.25em;
-}
-.toc li{margin-bottom:8px}
-.toc a{
-  text-decoration:none;
-}
-.toc a:hover{text-decoration:underline}
-
-h2{
-  margin:48px 0 18px;
-  padding-left:14px;
-  border-left:5px solid var(--accent);
-  font-size:26px;
-  line-height:1.5;
-  color:var(--text-dark);
-}
-p{
-  margin:0 0 18px;
-  font-size:16px;
-}
-ul{
-  margin:0 0 22px 1.2em;
-  padding:0;
-}
-li{
-  margin-bottom:10px;
-  font-size:16px;
-}
-
-.article-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:18px;
-  margin-bottom:28px;
-}
-.index-card{
-  display:flex;
-  flex-direction:column;
-  height:100%;
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:var(--radius);
-  padding:22px;
-  text-decoration:none;
-  transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
-}
-.index-card:hover{
-  transform:translateY(-2px);
-  border-color:var(--border-strong);
-  box-shadow:0 10px 22px rgba(0,0,0,.05);
-  text-decoration:none;
-}
-.card-category{
-  display:inline-block;
-  align-self:flex-start;
-  margin-bottom:10px;
-  padding:5px 10px;
-  border-radius:999px;
-  background:#fff5f7;
-  border:1px solid var(--border);
-  font-size:12px;
-  font-weight:700;
-  color:var(--accent-dark);
-}
-.index-card h3{
-  margin:0 0 8px;
-  font-size:20px;
-  line-height:1.6;
-  color:var(--accent-dark);
-}
-.index-card p{
-  margin:0 0 12px;
-  font-size:15px;
-  color:var(--text);
-}
-.card-link{
-  margin-top:auto;
-  font-size:14px;
-  font-weight:700;
-  color:var(--accent-dark);
-}
-
-.summary-box{
-  background:#fff7fa;
-}
-
-.cta-box{
-  margin-top:42px;
-  text-align:center;
-  background:linear-gradient(135deg,#fff3f7 0%,#fffafd 100%);
-  border-color:#f1d5de;
-}
-.cta-box h2{
-  border:0;
-  padding:0;
-  margin:0 0 12px;
-  font-size:28px;
-}
-.btn-row{
-  display:flex;
-  flex-wrap:wrap;
-  gap:14px;
-  justify-content:center;
-  margin-top:18px;
-}
-.btn{
-  display:inline-block;
-  min-width:220px;
-  padding:14px 24px;
-  border-radius:999px;
-  text-decoration:none;
-  font-size:15px;
-  font-weight:700;
-  transition:transform .2s ease,opacity .2s ease,background .2s ease;
-  box-sizing:border-box;
-  text-align:center;
-}
-.btn-primary{
-  background:var(--accent);
-  color:#ffffff;
-}
-.btn-primary:hover{
-  opacity:.92;
-  transform:translateY(-1px);
-}
-.btn-secondary{
-  background:#ffffff;
-  color:var(--accent-dark);
-  border:1px solid var(--accent);
-}
-.btn-secondary:hover{
-  background:#fff0f4;
-}
-
-.back-top{
-  margin-top:12px;
-  text-align:center;
-  font-size:14px;
-}
-.back-top a{
-  text-decoration:none;
-}
-.back-top a:hover{text-decoration:underline}
-
-@media (max-width:767px){
-  .article-page{padding:16px 16px 56px}
-  .article-hero,.toc,.summary-box,.cta-box,.related-box,.intro-box{padding:20px 18px}
-  h1{font-size:28px}
-  h2{font-size:22px}
-  .lead{font-size:16px}
-  .article-grid{grid-template-columns:1fr}
-  .btn{width:100%;min-width:0}
-  .hero-image{max-height:260px}
-}
-</style>
+<link rel="stylesheet" href="../style.css">
 
 <script type="application/ld+json">
 {
@@ -300,9 +34,8 @@ li{
 </script>
 </head>
 
-<body>
-<main class="article-page">
-<article class="article-wrap">
+<body class="article-page">
+<main class="article-wrap">
 
 <nav class="breadcrumb" aria-label="パンくずリスト">
   <a href="../index.html">ホーム</a> ＞ コラム一覧
@@ -339,6 +72,8 @@ li{
     「どんな教室を選べばよいか迷っている方」は教室選びの記事から読むと整理しやすくなります。
   </p>
 </section>
+
+<section class="article-main">
 
 <h2 id="age-guides">年齢別の始め方</h2>
 
@@ -424,7 +159,7 @@ li{
   <a href="../index.html">← 教室トップページへ戻る</a>
 </div>
 
-</article>
+</section>
 </main>
 </body>
 </html>
