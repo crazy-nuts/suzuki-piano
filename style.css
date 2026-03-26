@@ -143,3 +143,10 @@ li{margin-bottom:10px;font-size:16px}
   margin-bottom:30px;
   border:1px solid #eee;
 }
+.article-mid-cta{
+  margin:30px 0;
+  padding:20px;
+  border-radius:18px;
+  background:#fff7fa;
+  text-align:center;
+}
