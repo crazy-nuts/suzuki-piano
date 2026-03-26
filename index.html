@@ -33,10 +33,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
 
 <style>
-
 :root{
   --bg:#fffafc;
   --text:#2b2430;
@@ -74,6 +72,7 @@ section{ padding:14px 0; }
   box-shadow: var(--shadow);
   overflow:hidden;
 }
+.heroImageWrap{ position:relative; }
 .heroImg{ display:block; width:100%; height:auto; }
 
 
@@ -126,6 +125,14 @@ section{ padding:14px 0; }
   transition: transform .08s ease, filter .12s ease;
 }
 .btn:hover{ transform: translateY(-1px); filter: brightness(1.01); }
+.btnPrimary{
+  background: linear-gradient(135deg, var(--primary), var(--primary2));
+  color:#fff;
+  border-color: transparent;
+  box-shadow: 0 14px 30px rgba(255,111,174,.22);
+}
+.btnPrimary::before{ content:"♡"; margin-right:8px; }
+.btnSecondary::before{ content:"⌄"; margin-right:8px; color:#6d56b0; }
 
 .box{
   background: rgba(255,255,255,.72);
@@ -346,7 +353,6 @@ section{ padding:14px 0; }
     grid-template-columns: 1fr;
   }
 }
-
 </style>
 
 <script type="application/ld+json">
@@ -382,15 +388,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 横須賀市の幼児ピアノ教室｜4歳から通える個人レッスン【鈴木直子ピアノ教室】</h1>
     <div class="heroCard">
       <div class="heroImageWrap">
-<img src="assets/image_main.png" class="heroImg" alt="横須賀市のピアノ教室 鈴木直子ピアノ教室 ピアノレッスン" loading="eager">
-
-<a class="hero-image-link"
-data-cta="trial-form"
-href="https://docs.google.com/forms/d/e/1FAIpQLSfPO43fJrbqBhRFMAvBFYjVZ2mKgjwT_j_esNJCOItore-iYw/viewform"
-target="_blank"
-rel="noopener"></a>
-
-</div>
+        <img src="assets/image_main.png" class="heroImg" alt="横須賀市のピアノ教室 鈴木直子ピアノ教室 ピアノレッスン" loading="eager">
+      </div>
 
       <div class="heroCtaArea">
         <p class="hero-cv-copy">

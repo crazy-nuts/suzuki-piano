@@ -144,40 +144,9 @@ li{margin-bottom:10px;font-size:16px}
   border:1px solid #eee;
 }
 .article-mid-cta{
-  margin:30px 0;
-  padding:20px;
-  border-radius:18px;
-  background:#fff7fa;
-  text-align:center;
+margin:30px 0;
+padding:20px;
+border-radius:18px;
+background:#fff7fa;
+text-align:center;
 }
-.hero-image-link{
-  position:absolute;
-  left:50%;
-  transform:translateX(-50%);
-  bottom:22%;
-  width:72%;
-  height:16%;
-  z-index:5;
-}
-
-.hero-image-link:hover{
-  cursor:pointer;
-  background:rgba(255,255,255,0.05);
-}
-
-@media (max-width:768px){
-.hero-image-link{
-  bottom:26%;
-}
-}
-.heroImageWrap{position:relative}
-
-/* moved from index inline CSS: button variants */
-.btnPrimary{
-  background: linear-gradient(135deg, var(--primary), var(--primary2));
-  color:#fff;
-  border-color: transparent;
-  box-shadow: 0 14px 30px rgba(255,111,174,.22);
-}
-.btnPrimary::before{ content:"♡"; margin-right:8px; }
-.btnSecondary::before{ content:"⌄"; margin-right:8px; color:#6d56b0; }
