@@ -1,18 +1,23 @@
 from pathlib import Path
 from datetime import date
 import xml.etree.ElementTree as ET
+import os
 
 BASE_URL = "https://crazy-nuts.github.io/suzuki-piano"
-ROOT = Path(".")
+
+ROOT = Path(os.getcwd())
 
 html_files = []
 
-if (ROOT / "index.html").exists():
-    html_files.append(ROOT / "index.html")
+# トップ
+index_path = ROOT / "index.html"
+if index_path.exists():
+    html_files.append(index_path)
 
+# blog配下
 blog_dir = ROOT / "blog"
 if blog_dir.exists():
-    html_files.extend(sorted(blog_dir.glob("*.html")))
+    html_files.extend(blog_dir.glob("*.html"))
 
 urlset = ET.Element(
     "urlset",
@@ -22,7 +27,7 @@ urlset = ET.Element(
 today = date.today().isoformat()
 
 for path in html_files:
-    rel = path.as_posix()
+    rel = path.relative_to(ROOT).as_posix()
 
     url = ET.SubElement(urlset, "url")
 
@@ -42,5 +47,4 @@ for path in html_files:
         priority.text = "0.8"
 
 tree = ET.ElementTree(urlset)
-ET.indent(tree, space="  ")
 tree.write("sitemap.xml", encoding="utf-8", xml_declaration=True)
