@@ -1,13 +1,17 @@
 from pathlib import Path
 from datetime import date
 import xml.etree.ElementTree as ET
+import xml.dom.minidom as md
+import os
 
 BASE_URL = "https://crazy-nuts.github.io/suzuki-piano"
-
-# scripts/generate_sitemap.py を基準に、1つ上をサイトルートにする
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(os.getcwd())
 
 html_files = []
+
+# ----------------------------
+# 収集
+# ----------------------------
 
 # トップ
 index_path = ROOT / "index.html"
@@ -17,7 +21,11 @@ if index_path.exists():
 # blog配下
 blog_dir = ROOT / "blog"
 if blog_dir.exists():
-    html_files.extend(sorted(blog_dir.glob("*.html")))
+    html_files.extend(blog_dir.glob("*.html"))
+
+# ----------------------------
+# XML生成
+# ----------------------------
 
 urlset = ET.Element(
     "urlset",
@@ -26,31 +34,27 @@ urlset = ET.Element(
 
 today = date.today().isoformat()
 
-
-def to_public_url(path: Path) -> str:
-    rel = path.relative_to(ROOT).as_posix()
-
-    # 正規URLに揃える
-    if rel == "index.html":
-        return f"{BASE_URL}/"
-    if rel == "blog/index.html":
-        return f"{BASE_URL}/blog/"
-
-    return f"{BASE_URL}/{rel}"
-
-
 for path in html_files:
     rel = path.relative_to(ROOT).as_posix()
+
+    # URL正規化（ここ重要）
+    if rel == "index.html":
+        url_path = ""
+    elif rel.endswith("index.html"):
+        url_path = rel.replace("index.html", "")
+    else:
+        url_path = rel
 
     url = ET.SubElement(urlset, "url")
 
     loc = ET.SubElement(url, "loc")
-    loc.text = to_public_url(path)
+    loc.text = f"{BASE_URL}/{url_path}"
 
     lastmod = ET.SubElement(url, "lastmod")
     lastmod.text = today
 
     priority = ET.SubElement(url, "priority")
+
     if rel == "index.html":
         priority.text = "1.0"
     elif rel == "blog/index.html":
@@ -58,6 +62,12 @@ for path in html_files:
     else:
         priority.text = "0.8"
 
+# ----------------------------
+# 整形して書き出し（ここが今回の核心）
+# ----------------------------
 
-tree = ET.ElementTree(urlset)
-tree.write(ROOT / "sitemap.xml", encoding="utf-8", xml_declaration=True)
+rough_string = ET.tostring(urlset, 'utf-8')
+reparsed = md.parseString(rough_string)
+
+with open(ROOT / "sitemap.xml", "w", encoding="utf-8") as f:
+    f.write(reparsed.toprettyxml(indent="  "))
